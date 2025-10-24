@@ -14,6 +14,22 @@ body {
     padding: 0;
 }
 
+/* ================================
+   LOGO NAVBAR
+================================ */
+.navbar-logo {
+  height: 45px; /* ajuste o tamanho que combina com sua navbar */
+  width: auto;
+  margin-left: 1rem;
+  filter: brightness(0) invert(1); /* deixa branco se o fundo for escuro */
+  transition: transform 0.2s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+
 
 /*===========================================================
                     Estilos da página HOME
