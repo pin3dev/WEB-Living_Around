@@ -97,6 +97,29 @@
     </div>     
 
 
+    <!-- Modal de sucesso -->
+    <div class="modal fade show" id="successModal" tabindex="-1" aria-hidden="true" style="display: block;">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-modal">
+        <div class="modal-body text-center">
+            <p class="mb-4">Seu formulário foi enviado com sucesso!</p>
+            <button type="button" class="btn btn-ok" onclick="fecharPopup()">Ok</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Fundo escurecido -->
+    <div class="modal-backdrop fade show"></div>
+
+    <script>
+    function fecharPopup() {
+        document.getElementById('successModal').style.display = 'none';
+        document.querySelector('.modal-backdrop').style.display = 'none';
+    }
+    </script>
+
+
 
 
     <!-- Bootstrap CDM Javascript -->

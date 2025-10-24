@@ -472,6 +472,74 @@ Estilos do CONTATOS/Formulário
 }
 
 
+
+
+
+
+
+
+/* ================================
+   POPUP DE SUCESSO (CONTATOS)
+================================*/
+.custom-modal {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  font-family: 'Poppins', sans-serif;
+}
+
+.custom-modal p {
+  font-size: 1.1rem;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+/* BOTÃO OK */
+.btn-ok {
+  background-color: #4ca8ff !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 40px !important;
+  padding: 0.8rem 3rem !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.btn-ok:hover {
+  background-color: #6cbaff !important;
+  transform: scale(1.05);
+}
+
+/* Fundo escurecido */
+.modal-backdrop.show {
+  background-color: rgba(30, 30, 30, 0.81);
+}
+
+/* Centralização e suavidade */
+.modal.show .modal-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*===========================================================
                 Estilos da página ACOMODACAO
 ===========================================================*/
@@ -574,8 +642,9 @@ Estilo de Pagina LOCAIS
 .locais-page {
   position: relative;
   min-height: 100vh;
-  background: url('assets/compass.png')
-    no-repeat center center fixed;
+  background: 
+    linear-gradient(rgba(30, 30, 30, 0.81), rgba(30, 30, 30, 0.81)),
+    url('assets/compass.png') no-repeat center center fixed;
   background-size: cover;
   font-family: 'Poppins', sans-serif;
   color: white;
