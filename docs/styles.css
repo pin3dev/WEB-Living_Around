@@ -1,0 +1,687 @@
+
+/* ================================
+Estilos Gerais do Projeto
+Autor: Ivany Batista
+==================================*/
+
+html, body {
+  height: 100%;
+}
+
+/* Configurações gerais de página HOME */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*===========================================================
+                    Estilos da página HOME
+===========================================================*/
+
+
+/* Container com conteúdo da HOME */
+.rooling-container {
+    max-width: 1440px; /*define a largura fixa para o container*/
+    min-height: 3398px; /*define a altura para o container*/
+    width: 100%; /*faz o container ocupar 100% da largura disponível*/
+    margin: 0 auto; /*centraliza o container horizontalmente*/
+    font-family: 'Jura', sans-serif;
+}
+
+
+/* ================================
+Estilos do Setor HERO (imagem de fundo + navbar + texto centralizado)
+==================================*/
+
+/* Estilos Setor HOME/HERO */
+.hero-section {
+    width: 100%; /* largura total da seção hero */
+    height: 816px; /* altura fixa para a seção hero */
+    background-image: url(assets/hero-road.png); /* caminho para a imagem de fundo */
+    background-size: cover; /* cobre toda a área da seção */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat; /* evita repetição da imagem */
+}
+
+/* Configurações de NavBar boostrap do HOME/HERO */
+.hero-section .navbar {
+    background-color: transparent !important; /* torna o fundo da navbar transparente */
+    font-family: Jura, sans-serif;
+}
+
+/* Configurações de NavBar boostrap do CONTATOS */
+.contatos-section .navbar {
+    background-color: transparent !important; /* torna o fundo da navbar transparente */
+    font-family: Josefin Slab, serif;
+    text-transform: uppercase;
+}
+
+/* Configurações de NavBar boostrap do CONTATOS */
+.acomodacao-section .navbar {
+    background-color: transparent !important; /* torna o fundo da navbar transparente */
+    font-family: Josefin Slab, serif;
+    text-transform: uppercase;
+}
+
+/* Configuração de disposição de lista NavBar boostrap do HOME/HERO  */
+.navbar-nav .nav-item {
+    margin-left: 1.5rem; 
+    margin-right: 1.5rem;
+}
+
+/* Configuração de texto NavBar boostrap do HOME/HERO */
+.hero-text {
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-family: josefin slab, serif;
+}
+
+/* Configuração de Titulo do setor HOME/HERO */
+.hero-text h1 {
+    font-size: 79px;
+}
+
+
+/* ================================
+Estilos das Flags HERO (pequenas faixas horizontais com conteúdo)
+==================================*/
+
+
+/* Configurações gerais do Setor Flag horizontal HOME/HERO */
+.flag-hero-section {
+    width: 100%;
+    height: 569px;
+    background-color: #B49B2C40;
+
+    display: flex;  
+    align-items: center;   /* Centraliza conteudo verticalmente */
+    justify-content: center; /* Centraliza conteudo horizontalmente */
+}
+
+/* Configuração de conteúdo (texto) do Lado Esquerdo Setor Flag horizontal HOME/HERO */
+.lead-text {
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+  line-height: 2.5rem;
+}
+
+/* Configuração de destaque do texto do Lado Esquerdo Setor Flag horizontal HOME/HERO */
+.highlight {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+/* Linha divisória da Flag horizontal  HOME/HERO */
+.divider {
+  width: 1px;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Caixas demarcadas de conteúdo do Lado Direito Setor Flag horizontal HOME/HERO*/
+.job-box {
+  position: relative;
+  border: 2px solid transparent;
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+
+  display: flex;
+  justify-content: center; /* centraliza no eixo horizontal */
+  gap: 4rem; /* espaço entre as duas listas */
+}
+
+/* Definição de bordas da caixa */
+.job-box::before,
+.job-box::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-color: #000;
+  border-style: solid;
+}
+
+/* Posições das bordas da caixa */
+.job-box::before {
+  top: 0;
+  left: 0;
+  border-width: 10px 0 0 10px;
+}
+
+.job-box::after {
+  bottom: 0;
+  right: 0;
+  border-width: 0 10px 10px 0;
+}
+
+/* Configuração de Lista interna ao job-box */
+.job-box ul {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+
+/* ================================
+Estilos das Flags ACOMODACOES (pequenas faixas horizontais com conteúdo)
+==================================*/
+
+
+/* Configurações gerais do Setor Flag horizontal HOME/ACOMODACOES */
+.flag-acomodacoes-section {
+    width: 100%;
+    height: 515px;
+    background-color: #000000;
+    display: flex;  /* Layout flexbox para dividir em duas partes */
+}
+
+/* Configuração de conteúdo (imagem-van) do Lado Esquerdo Setor Flag horizontal HOME/ACOMODACOES */
+.image-side {
+    background-image: url('assets/van-vw-beach.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 100%;
+}
+
+/* Configuração de conteúdo do Lado Direito Setor Flag horizontal HOME/ACOMODACOES */
+.content-side {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+/* Configuração de Texto do Lado Direito Setor Flag horizontal HOME/ACOMODACOES */
+.discover-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+/* Configuração de Botão */
+.discover-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+}
+
+/* Configuração de efeito de cursor sobre botão */
+.discover-btn:hover {
+    background-color: white;
+    color: #000000;
+}
+
+/* Configuração de icone de topo */
+.scroll-icon {
+  position: absolute;
+  bottom: 30px;   /* distância do fundo */
+  right: 40px;    /* distância da borda direita */
+  width: 60px;
+  height: 60px;
+  border: 3px solid #fff;  /* borda branca */
+  border-radius: 50%;      /* círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  opacity: 0.9;
+}
+
+/* Configuração de Ícone dentro do círculo */
+.scroll-icon i {
+  font-size: 1.8rem;
+}
+
+/* Configuração de Efeito cursor sobre icone */
+.scroll-icon:hover {
+  background-color: #fff;
+  color: #000;
+  opacity: 1;
+}
+
+
+/* ================================
+Estilos das Flags LOCAIS (pequenas faixas horizontais com conteúdo)
+==================================*/
+
+
+/* Configurações gerais do Setor Flag horizontal HOME/ACOMODACOES */
+.flag-locais-section {
+    width: 100%;
+    height: 541px;
+    background-color: #B49B2C40;
+    display: flex;  /* Layout flexbox para dividir em duas partes */
+}
+
+/* Configuração de conteúdo (imagem) do Lado Direito Setor Flag horizontal HOME/LOCAIS */
+.flag-locais-section .image-side {
+    background-image: url('assets/road.png'); 
+}
+
+/* Configuração de conteúdo do Lado Esquerdo Setor Flag horizontal HOME/LOCAIS */
+.flag-locais-section  .content-side {
+    filter: invert(1);
+}
+
+.flag-locais-section  .content-side .discover-title {
+    margin: 5rem;
+}
+
+/* Configuração de icone de topo */
+.flag-locais-section .scroll-icon {
+    left: 40px;
+}
+
+
+/* ================================
+Estilos das Flags BLOG (faixas horizontais com botão)
+==================================*/
+
+.flag-blog-section {
+    width: 100%;
+    height: 690px;
+    background-image: url('assets/phone-pc.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex; 
+}
+
+.flag-blog-section .discover-btn {
+  background-color: #1E1E1E;
+  color: #fff;
+  border: 2px solid #1E1E1E;
+  border-radius: 40px;
+  padding: 0.6rem 3rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.flag-blog-section .discover-btn:hover {
+  background-color: #fff;  /* fundo branco */
+  color: #1E1E1E;             /* texto preto */
+  border-color: #fff;
+}
+
+
+
+/* ================================
+Estilos do Rodapé (Footer)
+==================================*/
+
+
+.footer-section {
+  background-color: #000; /* fundo preto */
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.footer-title {
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  font-size: 1.3rem;
+}
+
+/* Ícones sociais */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  background-color: #444; /* cinza escuro */
+  color: #000;
+  font-size: 2.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.1);
+}
+
+/* Créditos */
+.footer-credit {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.05em;
+}
+
+
+
+/*===========================================================
+                Estilos da página CONTACTS
+===========================================================*/
+
+.static-container {
+    max-width: 1440px; /*define a largura fixa para o container*/
+    min-height: 1024px; /*define a altura para o container*/
+    width: 100%; /*faz o container ocupar 100% da largura disponível*/
+    margin: 0 auto; /*centraliza o container horizontalmente*/
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* camada escura */
+        url('assets/van-truck.png'); /* imagem de fundo */
+    background-size: cover; /* cobre toda a área da seção */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat; /* evita repetição da imagem */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* ================================
+   CONTEÚDO PRINCIPAL (FORM + TEXTO)
+==================================*/
+.contatos-text {
+  flex: 1;
+  display: flex;
+  align-items: center; /* centraliza verticalmente */
+  justify-content: center; /* centraliza horizontalmente */
+  padding: 2rem 0;
+}
+
+.contatos-text .container {
+  max-width: 1200px;
+}
+
+
+/* ================================
+Estilos do CONTATOS/Formulário
+==================================*/
+
+
+/* Caixa preta do formulário */
+.form-box {
+  background-color: rgba(0, 0, 0, 0.9);
+  max-width: 380px;
+  margin: 0 auto;
+  color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Campos do formulário */
+.form-control {
+  border-radius: 10px;
+  border: none;
+  padding: 0.75rem 1rem;
+}
+
+/* Label dos inputs */
+.form-label {
+  font-family: 'Jura', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+/* Botão */
+.btn-outline-light {
+    border-radius: 40px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* ================================
+   TEXTO DA COLUNA DIREITA
+==================================*/
+.col p {
+  font-family: 'Jura', serif;
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: right;
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 2rem;
+}
+
+
+/*===========================================================
+                Estilos da página ACOMODACAO
+===========================================================*/
+
+/* Estilos Setor HOME/HERO */
+.acomodacao-section {
+    position: relative;
+    width: 100%; /* largura total da seção hero */
+    height: 50vh; /* metade da altura da janela */
+    background-image: url(assets/van-beach.png); /* caminho para a imagem de fundo */
+    background-size: cover; /* cobre toda a área da seção */
+    background-position: left -80px; /* centraliza a imagem */
+    background-repeat: no-repeat; /* evita repetição da imagem */
+    background-color: #c8c3a4;
+}
+
+.rooling-container.acomodacao-page {
+  min-height: 100vh; /* ocupa a altura total da janela */
+}
+
+/* Configuração de texto NavBar boostrap do HOME/HERO */
+/* Configuração do texto sobre o fundo */
+.acomodacao-text {
+  position: absolute; /* necessário pra o pseudo-elemento funcionar */
+  top: 150px;
+  width: 100%;
+  height: 20%; /* ocupa toda a altura da seção */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: white;
+  font-family: 'Josefin Slab', serif;
+  font-size: 3rem; /* aumenta o tamanho do texto */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  z-index: 1; /* garante que o texto fique sobre a faixa */
+  background-color: rgba(0, 0, 0, 0.5); /* fundo preto semi-transparente */
+}
+
+
+/* ==========================
+   GRID DE ACOMODAÇÕES
+========================== */
+.acomodacoes-grid {
+  background-color: #c8c3a4; /* tom bege claro igual ao design */
+}
+
+.accommodation-card {
+  background-color: #e6e6e6;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.accommodation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.accommodation-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.accommodation-card h5 {
+  font-family: 'Jura', sans-serif;
+  font-weight: 600;
+  color: #000;
+}
+
+.accommodation-card p, 
+.accommodation-card ul {
+  font-family: 'Jura', sans-serif;
+  font-size: 0.95rem;
+  color: #000;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.accommodation-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.accommodation-card ul li::before {
+  content: "• ";
+  color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+/* ================================
+Media Queries para Responsividade geral
+==================================*/
+
+/* Media Queries para Responsividade */
+/* Tablets e telas médias (768px - 1024px) */
+@media (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 60px;
+    }
+    
+    .hero-section {
+        height: 600px;
+    }
+    
+    .discover-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* Tablets pequenos (481px - 768px) */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 45px;
+    }
+    
+    .hero-section {
+        height: 500px;
+    }
+    
+    .navbar-nav .nav-item {
+        margin-left: 0.5rem; 
+        margin-right: 0.5rem;
+    }
+    
+    .flag-acomodacoes-section {
+        flex-direction: column;
+        height: auto;
+        min-height: 515px;
+    }
+    
+    .image-side {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .content-side {
+        width: 100%;
+        padding: 3rem 1.5rem;
+    }
+    
+    .discover-title {
+        font-size: 2rem;
+    }
+
+      .scroll-icon {
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        right: 20px;
+  }
+
+    .scroll-icon i {
+        font-size: 1.4rem;
+    }
+
+    .form-box {
+    max-width: 90%;
+    padding: 2rem;
+  }
+
+}
+
+/* Smartphones (até 480px) */
+@media (max-width: 480px) {
+    .rooling-container {
+        min-height: auto; /* permite altura automática em mobile */
+    }
+    
+    .hero-text h1 {
+        font-size: 32px;
+        padding: 0 20px;
+    }
+    
+    .hero-section {
+        height: 400px;
+    }
+    
+    .navbar-nav .nav-item {
+        margin-left: 0.25rem; 
+        margin-right: 0.25rem;
+    }
+    
+    .image-side {
+        height: 250px;
+    }
+    
+    .content-side {
+        padding: 2rem 1rem;
+    }
+    
+    .discover-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .discover-btn {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+}
