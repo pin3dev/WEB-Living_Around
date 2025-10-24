@@ -567,6 +567,258 @@ Estilos do CONTATOS/Formulário
 
 
 
+/* ===============================
+Estilo de Pagina LOCAIS
+=================================*/
+
+.locais-page {
+  position: relative;
+  min-height: 100vh;
+  background: url('assets/compass.png')
+    no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.locais-page .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+/* NAVBAR */
+.locais-page .navbar {
+  background: transparent !important;
+  padding: 1.5rem 2rem;
+}
+
+.locais-page .navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+  margin-right: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* CONTEÚDO */
+.locais-page .content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* FORM */
+.locais-page .form-box {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 2.5rem;
+  width: 300px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  color: #333;
+}
+
+.locais-page label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.locais-page select {
+  margin-bottom: 1.5rem;
+}
+
+.locais-page .btn-custom {
+  background-color: #8a8b45;
+  border: none;
+  width: 100%;
+  color: #222;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 0.6rem;
+}
+
+.locais-page .btn-custom:hover {
+  background-color: #9b9c4f;
+}
+
+/* MAPA */
+.locais-page .map-box {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 1rem;
+  width: 360px;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  pointer-events: none;
+}
+
+.locais-page .map-box.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.locais-page .map-box iframe {
+  width: 95%;
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  transform: translateX(-5px); /* corrige leve deslocamento */
+}
+
+/* INFO */
+.locais-page .location-info {
+  margin-top: 1rem;
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.locais-page .location-info strong {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.locais-page .container-fluid,
+.locais-page .content-container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0 auto !important;
+}
+
+/* Garante centralização absoluta dos itens principais */
+.locais-page .content-container {
+  justify-content: center !important;
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: none !important;
+}
+
+/* Corrige centralização do mapa dentro do card */
+.locais-page .map-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto !important;
+  width: 350px;
+}
+
+/* Corrige o iframe (Google Maps) */
+.locais-page .map-box iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  transform: none; /* remove compensação antiga */
+}
+
+/* Evita interferência do Bootstrap no body */
+.locais-page body,
+body.locais-page {
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow-x: hidden; /* evita scroll horizontal */
+}
+
+/* ===============================
+   Estilo de Pagina MODAL
+================================*/
+.hippie-page {
+  position: relative;
+  min-height: 100vh;
+  /* background: url('assets/van-beach.png') no-repeat center center fixed; */
+  background: 
+    linear-gradient(rgba(30, 30, 30, 0.81), rgba(30, 30, 30, 0.81)),
+    url('assets/van-beach.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+.hippie-page .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/* CARD PRINCIPAL */
+.hippie-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 20px;
+  max-width: 700px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  padding: 1rem 1.5rem;
+  margin: 5%;
+}
+
+.hippie-card img {
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.hippie-card h4 {
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
+/* TEXTO */
+.hippie-card .card-text {
+  font-family: 'Jura', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1e1e1e;
+  text-align: justify;
+}
+
+/* BOTÃO */
+.btn-alugar {
+  background-color: #8a8b45;
+  border: none;
+  border-radius: 10px;
+  color: #222;
+  font-weight: 500;
+  padding: 0.6rem 2.5rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-alugar:hover {
+  background-color: #9b9c4f;
+  color: #000;
+}
+
+
+
+
+
+
 
 
 
@@ -629,12 +881,12 @@ Media Queries para Responsividade geral
         font-size: 2rem;
     }
 
-      .scroll-icon {
-        width: 45px;
-        height: 45px;
-        bottom: 15px;
-        right: 20px;
-  }
+    .scroll-icon {
+      width: 45px;
+      height: 45px;
+      bottom: 15px;
+      right: 20px;
+}
 
     .scroll-icon i {
         font-size: 1.4rem;
@@ -643,6 +895,11 @@ Media Queries para Responsividade geral
     .form-box {
     max-width: 90%;
     padding: 2rem;
+  }
+
+    .hippie-card {
+    max-width: 90%;
+    padding: 1.2rem;
   }
 
 }

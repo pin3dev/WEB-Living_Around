@@ -1,100 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Living Around - Locais Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Importação de Bootstrap CDM CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- Importação de font (JURA e JOSEFIN) do Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&family=Josefin+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locais | Living Around</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
-    <!-- Página LOCAIS -->
-    <div class="static-container">
-        <!-- Setor LOCAIS  -->
-        <section class="locais-section">
-            
-            <!-- Navbar Boostrap da LOCAIS -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-light">
-                <div class="container-fluid">
-                    <!-- <a class="navbar-brand" href="#"></a> -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="acomodacao.html">Acomodação</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="locais.html">Locais</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contatos.html">Contatos</a>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+  <div class="locais-page">
+    <div class="overlay"></div>
 
-            <!-- Corpo de Section -->
-            <div class="d-flex justify-content-center align-items-center contatos-text">
-                
-                <!-- Colunas Boostrap -->
-                <div class="container text-center">
-                    <div class="row align-items-start">
-                        
-                        <!-- Coluna Esquerda -->
-                        <div class="col">
-                            <!-- FORMULÁRIO -->
-                            <div class="form-box p-5 rounded-4">
-                            <form>
-                                <div class="mb-3 text-start">
-                                <label for="nome" class="form-label">Escolha o país:</label>
-                                <input type="text" class="form-control" id="nome">
-                                </div>
-    
-                                <div class="mb-3 text-start">
-                                <label for="email" class="form-label">Escolha a cidade:</label>
-                                <input type="email" class="form-control" id="email">
-                                </div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold" href="#">/M</a>
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="acomodacao.html" class="nav-link">ACOMODAÇÃO</a></li>
+            <li class="nav-item"><a href="locais.html" class="nav-link">LOCAIS</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">BLOG</a></li>
+            <li class="nav-item"><a href="contatos.html" class="nav-link">CONTATOS</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-                                <button type="submit" class="btn rounded-pill btn-outline-light w-100 py-2">Ver</button>
-                            </form>
-                            </div>
-    
-    
-    
-    
-                        </div>
-    
-                        <!-- Coluna do Direita -->
-                        <div class="col">
-                            <!-- Texto Paragrafo-->
-                             <p>
-                                "Viajar é descobrir que todos estão errados sobre os outros países." <br> <br>
-                                - Aldous Huxley
-                             </p>
-                        </div>
-                    </div>
-                </div>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="content-container">
+      <div class="form-box">
+        <form id="localForm">
+          <div class="mb-3">
+            <label for="pais">Escolha o país:</label>
+            <select id="pais" class="form-select">
+              <option value="">Selecione</option>
+              <option value="Portugal">Portugal</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="cidade">Escolha a cidade:</label>
+            <select id="cidade" class="form-select">
+              <option value="">Selecione</option>
+              <option value="Porto">Porto</option>
+            </select>
+          </div>
+          <button type="button" id="verBtn" class="btn btn-custom">Ver</button>
+        </form>
+      </div>
 
+      <div class="map-box" id="mapContainer">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14921.173907502082!2d-8.619192199999999!3d41.1579437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2464fdbfef9c7f%3A0x400ebbde49036b0!2sPorto!5e0!3m2!1spt-BR!2spt!4v1700000000000"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
 
-            </div>
+        <div class="location-info">
+          <strong>LIVING AROUND - Porto</strong>
+          Rua da Alegria, 666<br>
+          4000-789 - Porto<br>
+          livingaround.porto@living.com
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Script simples para exibir o mapa -->
+  <script>
+    const verBtn = document.getElementById("verBtn");
+    const mapContainer = document.getElementById("mapContainer");
 
-        </section>
-    </div>     
+    verBtn.addEventListener("click", () => {
+      const pais = document.getElementById("pais").value;
+      const cidade = document.getElementById("cidade").value;
 
-
-
-
-    <!-- Bootstrap CDM Javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      if (pais === "Portugal" && cidade === "Porto") {
+        mapContainer.classList.add("show");
+      } else {
+        mapContainer.classList.remove("show");
+      }
+    });
+  </script>
 </body>
 </html>
