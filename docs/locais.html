@@ -11,72 +11,75 @@
   <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&family=Josefin+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="locais-page">
-    <!-- <div class="overlay"></div> -->
-
-
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/navbar-logo.png" alt="Living Around" class="navbar-logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="acomodacao.html">Acomodação</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="locais.html">Locais</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contatos.html">Contatos</a>
-                </li>
-                </ul>
+  
+  <div class="static-container-locais">
+    <div class="locais-page">
+      <!-- <div class="overlay"></div> -->
+  
+  
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                  <img src="assets/navbar-logo.png" alt="Living Around" class="navbar-logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="acomodacao.html">Acomodação</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="locais.html">Locais</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contatos.html">Contatos</a>
+                  </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  
+      <!-- CONTEÚDO PRINCIPAL -->
+      <div class="content-container">
+        <div class="form-box">
+          <form id="localForm">
+            <div class="mb-3">
+              <label for="pais">Escolha o país:</label>
+              <select id="pais" class="form-select">
+                <option value="">país</option>
+                <option value="Portugal">Portugal</option>
+              </select>
             </div>
+            <div class="mb-3">
+              <label for="cidade">Escolha a cidade:</label>
+              <select id="cidade" class="form-select">
+                <option value="">cidade</option>
+                <option value="Porto">Porto</option>
+              </select>
+            </div>
+            <button type="button" id="verBtn" class="btn btn-custom">Ver</button>
+          </form>
         </div>
-    </nav>
-
-    <!-- CONTEÚDO PRINCIPAL -->
-    <div class="content-container">
-      <div class="form-box">
-        <form id="localForm">
-          <div class="mb-3">
-            <label for="pais">Escolha o país:</label>
-            <select id="pais" class="form-select">
-              <option value="">país</option>
-              <option value="Portugal">Portugal</option>
-            </select>
+  
+        <div class="map-box" id="mapContainer">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14921.173907502082!2d-8.619192199999999!3d41.1579437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2464fdbfef9c7f%3A0x400ebbde49036b0!2sPorto!5e0!3m2!1spt-BR!2spt!4v1700000000000"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+  
+          <div class="location-info">
+            <strong>LIVING AROUND - Porto</strong>
+            Rua da Alegria, 666<br>
+            4000-789 - Porto<br>
+            livingaround.porto@living.com
           </div>
-          <div class="mb-3">
-            <label for="cidade">Escolha a cidade:</label>
-            <select id="cidade" class="form-select">
-              <option value="">cidade</option>
-              <option value="Porto">Porto</option>
-            </select>
-          </div>
-          <button type="button" id="verBtn" class="btn btn-custom">Ver</button>
-        </form>
-      </div>
-
-      <div class="map-box" id="mapContainer">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14921.173907502082!2d-8.619192199999999!3d41.1579437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2464fdbfef9c7f%3A0x400ebbde49036b0!2sPorto!5e0!3m2!1spt-BR!2spt!4v1700000000000"
-          allowfullscreen=""
-          loading="lazy">
-        </iframe>
-
-        <div class="location-info">
-          <strong>LIVING AROUND - Porto</strong>
-          Rua da Alegria, 666<br>
-          4000-789 - Porto<br>
-          livingaround.porto@living.com
         </div>
       </div>
     </div>

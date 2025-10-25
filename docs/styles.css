@@ -657,15 +657,25 @@ Estilos do CONTATOS/Formulário
 Estilo de Pagina LOCAIS
 =================================*/
 
+
+.static-container-locais {
+    max-width: 1440px; /*define a largura fixa para o container*/
+    min-height: 1024px; /*define a altura para o container*/
+    width: 100%; /*faz o container ocupar 100% da largura disponível*/
+    margin: 0 auto; /*centraliza o container horizontalmente*/
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* camada escura */
+        url('assets/compass.png'); /* imagem de fundo */
+    background-size: cover; /* cobre toda a área da seção */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat; /* evita repetição da imagem */
+    display: flex;
+    flex-direction: column;
+}
+
 .locais-page {
   position: relative;
   min-height: 100vh;
-  background: 
-    linear-gradient(rgba(30, 30, 30, 0.81), rgba(30, 30, 30, 0.81)),
-    url('assets/compass.png') no-repeat center center fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   font-family: 'Jura', sans-serif;
   color: white;
 }
