@@ -664,6 +664,8 @@ Estilo de Pagina LOCAIS
     linear-gradient(rgba(30, 30, 30, 0.81), rgba(30, 30, 30, 0.81)),
     url('assets/compass.png') no-repeat center center fixed;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: 'Jura', sans-serif;
   color: white;
 }
@@ -933,6 +935,7 @@ Media Queries para Responsividade geral
     .discover-title {
         font-size: 2.2rem;
     }
+
 }
 
 /* Tablets pequenos (481px - 768px) */
@@ -1030,4 +1033,13 @@ Media Queries para Responsividade geral
         padding: 10px 25px;
         font-size: 1rem;
     }
+
+    .locais-page {
+    background-attachment: scroll; /* evita bug do fixed no mobile */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-color: #000; /* garante fundo escuro por baixo */
+  }
 }
