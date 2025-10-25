@@ -29,7 +29,9 @@ body {
   transform: scale(1.05);
 }
 
-
+.acomodacao-section .navbar-logo {
+  filter: invert(1) !important;
+}
 
 /*===========================================================
                     Estilos da página HOME
@@ -454,7 +456,7 @@ Estilos do CONTATOS/Formulário
 
 /* Label dos inputs */
 .form-label {
-  font-family: 'Jura', sans-serif;
+  font-family: 'Jura', serif;
   font-weight: 600;
   letter-spacing: 0.05em;
   color: #fff;
@@ -503,7 +505,7 @@ Estilos do CONTATOS/Formulário
   padding: 2rem;
   border: none;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Jura', serif;
 }
 
 .custom-modal p {
@@ -662,7 +664,7 @@ Estilo de Pagina LOCAIS
     linear-gradient(rgba(30, 30, 30, 0.81), rgba(30, 30, 30, 0.81)),
     url('assets/compass.png') no-repeat center center fixed;
   background-size: cover;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Jura', sans-serif;
   color: white;
 }
 
@@ -676,6 +678,8 @@ Estilo de Pagina LOCAIS
 /* NAVBAR */
 .locais-page .navbar {
   background: transparent !important;
+  font-family: Josefin Slab, serif;
+  text-transform: uppercase;
   padding: 1.5rem 2rem;
 }
 
@@ -767,7 +771,7 @@ Estilo de Pagina LOCAIS
   margin-top: 1rem;
   color: white;
   font-size: 0.9rem;
-  text-align: center;
+  text-align: left;
 }
 
 .locais-page .location-info strong {
@@ -836,7 +840,7 @@ body.locais-page {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Jura', sans-serif;
   color: #222;
 }
 
@@ -867,7 +871,7 @@ body.locais-page {
 }
 
 .hippie-card h4 {
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Jura', serif;
   font-size: 1.8rem;
   font-weight: 600;
   color: #1e1e1e;
