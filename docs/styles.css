@@ -968,6 +968,12 @@ Media Queries para Responsividade geral
         height: auto;
         min-height: 515px;
     }
+
+  .flag-locais-section {
+    flex-direction: column;
+    height: auto;
+    min-height: 541px; /* mesma altura base */
+  }
     
     .image-side {
         width: 100%;
