@@ -41,7 +41,7 @@ body {
 /* Container com conteúdo da HOME */
 .rooling-container {
     max-width: 1440px; /*define a largura fixa para o container*/
-    min-height: 3398px; /*define a altura para o container*/
+    min-height: 100vh; /*define a altura para o container*/
     width: 100%; /*faz o container ocupar 100% da largura disponível*/
     margin: 0 auto; /*centraliza o container horizontalmente*/
     font-family: 'Jura', sans-serif;
