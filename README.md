@@ -34,7 +34,7 @@
 
 ## 🧩 Sobre o Projeto <a id="about"></a>
 
-**Living Around** é uma landing page desenvolvida como parte da cadeira de **Programação Web** do curso **CESAE**.  
+**Living Around** é uma landing page desenvolvida como parte da cadeira de **Programação Web** do curso **CESAE Digital - Software Developer (PRT)**.  
 O projeto consiste em replicar com fidelidade o **layout e as interações** propostas no protótipo original do Figma.
 
 🎨 **Protótipo no Figma:**  
@@ -93,5 +93,5 @@ Depois acesse em:
 
 ---
 
-<p align="center">📘 Projeto educacional — CESAE | Programação Web</p>
+<p align="center">📘 Projeto educacional — CESAE | Digital</p>
 
